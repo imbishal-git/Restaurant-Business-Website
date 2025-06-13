@@ -16,15 +16,19 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    height: 60px;
+    background-color: purple;
 }
-
 .container h1{
     color: orangered;
-    margin-left: 10px;
+    margin-left: 20px;
     cursor: pointer;
     font-weight: bolder;
 }
-
+.container h1:hover{
+    color:aqua;
+    transform: translate(-5px);
+}
 .navbar ul li{
     display: inline-block;
     padding: 18px;
@@ -40,6 +44,7 @@ body{
 }
 
 .navbar ul li a:hover{
+    color: aqua;
     box-shadow: 0 3px 50px orangered inset, 0 3px 50px orangered inset,0 3px 50px orangered inset,0 3px 50px orangered inset;
 }
 
@@ -47,36 +52,49 @@ body{
     padding: 8px;
     background-color:orangered;
 }
+.navbar .reservation:hover{
+    color: aqua;
+    background-color: black;
+}
 
 .content{
     position: absolute;
     color:green;
     top:  40%;
-    left: 30%;
+    left: 20%;
     font-weight: bold;
-    
+}
+.content:hover{
+    transform:translate(10px);
 }
 
 .content h3{
     font-family: sans-serif;
-    font-size: 20px;
-    margin-left: 30%;
+    font-size: 40px;
+    margin-left: 10%;
+    font-weight: bold;
+    color: yellow;
+}
+.content h3:hover{
+   color:greenyellow;
 }
 
 .content h1{
     font-size: 50px;
 }
-.container p{
-    text-align: center;
-    margin-top: 17px;
+.content p{
+    font-weight: bold;
+    color:blue;
+   
 }
 
 .search{
     position: absolute;
     margin-top: 26%;
-    margin-left: 42%;
+    margin-left: 40%;
 }
 .search input{
+    margin-top: 10px;
     outline: none;
     border: none;
     padding: 12px 40px;
@@ -85,13 +103,14 @@ body{
     font-weight: bold;
 }
 .search input:hover{
-    color:aqua;
+    color:black;
+    background-color: aqua;
 }
 
 .submit{
     position: absolute;
-    margin-top: 31%;
-    margin-left: 49%;
+    margin-top: 31.3%;
+    margin-left: 46%;
 }
 
 .submit a{
@@ -103,4 +122,5 @@ body{
 }
 .submit a:hover{
     color:greenyellow;
+    background-color: blueviolet;
 }
